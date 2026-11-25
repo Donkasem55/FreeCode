@@ -1,0 +1,8 @@
+<xml>
+<include src="html/nav.xml" />
+<body>
+	<div class="home">
+		<h1>Hello FreeCode!</h1>
+	</div>
+</body>
+</xml>

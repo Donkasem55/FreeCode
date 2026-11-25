@@ -1,0 +1,13 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+<g>
+<title>Layer 1</title>
+<rect id="svg_10" height="713" width="897" y="-36.5" x="-39.5" stroke="#bf0000" fill="#ffaaaa"/>
+<rect transform="rotate(-8, 414.417, 439.141)" id="svg_3" height="519.36894" width="1006" y="179.4569" x="-88.58281" stroke="#ff5656" fill="#ff5656"/>
+<path id="svg_4" d="m-87.58281,117.4569l1006,0l0,519.36896l-1006,0l0,-519.36896z" transform="rotate(-2, 415.417, 377.141)" opacity="undefined" stroke="#ff5656" fill="#ff5656"/>
+<path id="svg_5" d="m-76.5,236.5l937,0l0,329l-937,0l0,-329z" transform="rotate(2, 392, 401)" opacity="undefined" stroke="#ff5656" fill="#ff3838"/>
+<path id="svg_6" d="m-98.5,395.5l1005,0l0,410l-1005,0l0,-410z" transform="rotate(-2, 404, 600.5)" opacity="undefined" stroke="#ff0000" fill="#ff2323"/>
+<path id="svg_8" d="m-99.5,345.5l1005,0l0,410l-1005,0l0,-410z" transform="rotate(-2, 403, 550.5)" opacity="undefined" fill="#ff2323"/>
+<path id="svg_9" d="m-74.16845,463.50868l970,0l0,221.99421l-970,0l0,-221.99421z" transform="rotate(2, 410.832, 574.506)" opacity="undefined" fill="#d11717"/>
+</g>
+</svg>

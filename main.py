@@ -1,5 +1,7 @@
 from wsgiref.simple_server import make_server
 import sys
+from parser import parsefle
+
 
 if sys.argv[1:] == []:
 	port = 8000
@@ -7,11 +9,8 @@ else:
 	port = sys.argv[1]
 
 def getpage(filename, path):
-	with open(f"html/{filename}") as f:
-		html = f.read()
-		html = html.replace("{indexhtml}", f"{"."*(len(path)+1)}/index.html")
-		html = html.replace("{iconpng}", f"{"."*(len(path)+1)}/icon.png")
-		
+	html = parsefle("html/" + filename)
+
 	return html
 
 def getcss(filename):
@@ -20,7 +19,7 @@ def getcss(filename):
 	return css
 
 def homepage():
-	page = getpage("index.html", [])
+	page = getpage("index.xml", [])
 	return page.replace("{titlesign}", "Home")
 
 def course(path):
@@ -34,6 +33,8 @@ def server(environ, start_response):
 	while "" in path:
 		path.remove("")
 
+	CT = "text/html"
+
 	if request_method == "GET":
 		if path == []:
 			response_body = homepage().encode("utf-8")
@@ -43,9 +44,14 @@ def server(environ, start_response):
 			response_body = response_body.encode("utf-8")
 		elif path[-1].endswith(".css"):
 			response_body = getcss(path[-1]).encode("utf-8")
+			CT = "text/css"
+			status = "200 OK"
+		elif path[-1].endswith(".svg"):
+			response_body = getcss(path[-1]).encode("utf-8")
+			CT = "image/svg+xml"
 			status = "200 OK"
 
-	headers = [('Content-type', 'text/html')]
+	headers = [('Content-type', CT)]
 	start_response(status, headers)
 	return [response_body]
 

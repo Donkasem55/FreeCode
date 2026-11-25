@@ -1,0 +1,11 @@
+<xml>
+<css src="xml/index.css" />
+<body>
+	<div class="heading blurred">
+		<div class="headText"><h1>Freecode</h1></div>
+		<div class="nav">
+			<a href="index.html" class="active"><b>Home</b></a>
+		</div>
+	</div>
+</body>
+</xml>
