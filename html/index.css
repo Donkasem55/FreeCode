@@ -92,7 +92,6 @@ body {
 .nav {
 	position: fixed;
 	height: 45px;
-	margin-left: 30px;
 	display: flex;
 	align-items: center;
 	gap: 2px;
@@ -106,7 +105,7 @@ body {
 	font-size: 17px;
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.05);
 	font-family: Verdana, ui-rounded;
 	margin: 0;
 	overflow: hidden;
@@ -124,8 +123,9 @@ body {
 	background-color: rgba(255, 255, 255, 0.10);
 }
 
-.active {
-	background-color: #1c1c1c;
+.nav .active {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding-left: 17px;
 }
 
 .white {

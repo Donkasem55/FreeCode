@@ -1,10 +1,14 @@
 <xml>
 <css src="xml/index.css" />
+<head>
+	<title>FreeCode | {titlesign}</title>
+</head>
 <body>
 	<div class="heading blurred">
 		<div class="headText"><h1>Freecode</h1></div>
 		<div class="nav">
 			<a href="index.html" class="active"><b>Home</b></a>
+			<a href="index.html"><b>Test</b></a>
 		</div>
 	</div>
 </body>
